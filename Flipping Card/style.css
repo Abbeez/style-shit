@@ -14,7 +14,10 @@ p {
 
 
 body {
-    background: #141414;
+    background: #101010;
+    background-image: url('/images/Card\ BG.jpg');
+    background-size: 50% 50%;
+    background-repeat: repeat;
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -34,6 +37,16 @@ section.card-container {
     overflow: hidden;
     padding: 20px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 1px 1px 3px #2c2c2c;
+}
+
+.card-container header,
+.card-number__container,
+.card_footer__container {
+    /* outline: 1px solid red; */
 }
 
 
@@ -58,4 +71,35 @@ section.card-container .main-logo {
 
 section.card-container .chip {
     width: 50px;
+}
+
+
+
+.card-number__container .card__label {
+    font-size: 0.8rem;
+}
+
+.card-number__container .card__digits {
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem;
+    font-weight: 300;
+}
+
+.card_footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__validity {
+    text-align: center;
+}
+
+.card_footer__container .card__name,
+.card_footer__container .card_validity__expiration {
+    font-size: 0.8rem;
+}
+
+.card_footer__container .card_validity__label {
+    font-size: 0.6rem
 }
